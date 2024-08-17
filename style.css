@@ -9,6 +9,9 @@ html, body{
     height: 100%;
     width: 100%;
 }
+body{
+    background-color: #f8f8f8 ;
+}
 
 #main{
     width: 100%;
@@ -40,6 +43,28 @@ html, body{
     font-family: monument;
     font-size: 45px;
     letter-spacing: -1;
+    position: relative;
+}
+
+#nav h1::after{
+    content: "©";
+    font-family: gilroy;
+    font-weight: 400;
+    font-size: 20px;
+    position: absolute;
+    top: 23%;
+    right: 13%;
+}
+#nav h1::before{
+    content: "model management";
+    font-family: gilroy;
+    font-weight: 500;
+    font-size: 15px;
+    color: #666;
+    letter-spacing:0.1px ;
+    position: absolute;
+    bottom: 21%;
+    right: 15%;
 }
 #nav h2{
     height: 100%;
@@ -365,6 +390,7 @@ html, body{
     justify-content: space-between;
     padding: 0vw 2vw;
     position: relative;
+    transition: all ease 0.7s;
 }
 .elem img{
     height:150px;
@@ -375,6 +401,7 @@ html, body{
     opacity: 0;
     transition: all ease 0.8s;
     object-fit: cover;
+    /* object-position: center; */
 
 }
 .elem h4{
@@ -401,7 +428,190 @@ html, body{
     border-bottom: 2px solid black;
 }
 
+.elem:nth-last-child(1) img{
+    left: 40%;
+}
+
+.elem:nth-last-child(3) img{
+    left: 40%;
+}
+
+.elem:hover{
+    background-color: #e6e6e66e;
+}
 .elem:hover img{
     opacity: 1;
     left: 24%;
+} 
+
+#page6{
+    width: 100%;
+    height: 100%;
+    /* background-color: turquoise; */
+    padding: 5vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page6-part1{
+    width: 55%;
+    height: 100%;
+    /* background-color: cadetblue; */
+}
+#page6-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#page6-part2{
+    width: 43%;
+    height: 100%;
+    /* background-color: rgb(88, 90, 240); */
+}
+
+#page6-part21{
+    height: 40%;
+    width: 100%;
+    /* background-color: rgb(97, 53, 37); */
+}
+#page6-part21 h1{
+    padding-top: 0.4vw;
+    font-family: monument;
+    font-weight: 600;
+    font-size: 2.3vw;
+}
+#page6-part21 h5{
+    font-size: 1.1vw;
+    font-weight: 600;
+    padding: 1vw 0vw;
+}
+
+#page6-part21 p{
+    font-size: 0.9vw;
+    padding: 0.5vw 0vw;
+}
+#page6-part22{
+    /* background-color: rgb(123, 248, 248); */
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page6-part22 img{
+    width: 55%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#page6-part22 img:nth-last-child(1){
+    width: 40%;
+}
+
+#page7{
+    width: 100%;
+    height: 100%;
+    /* background-color: forestgreen; */
+    background-size: cover;
+    padding: 4vw 4vw;
+}
+#page7 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+#page8{
+    height: 100%;
+    width: 100%;
+    /* background-color:lightskyblue; */
+    padding: 5vw 4vw;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#page8-part1{
+    width: 55%;
+    height: 100%;
+    /* background-color: antiquewhite; */
+}
+#page8-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#page8-part2{
+    width: 42%;
+    height: 100%;
+    /* background-color: rgb(248, 196, 128); */
+}
+
+#page8-part2 img{
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+#page8-part22{
+    padding-top: 1vw;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+#page8-part22 h3{
+    font-size: 1.4vw;
+    font-weight: 600;
+}
+
+#page8-part22 p{
+    font-size: 0.9vw;
+}
+
+#marquee{
+     /* height: 15vh; */
+     width: 100%;
+     /* background-color: red; */
+     padding: 0.8vw;
+     white-space: nowrap;
+     overflow-x: hidden;
+     overflow-y: hidden;
+     border-top: 2px solid black;
+     border-bottom: 2px solid black;
+}
+#marquee h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    -webkit-text-stroke: 2px black;
+    color: transparent;
+    font-family: monument;
+    margin-right: 16px;
+    letter-spacing: 3px;
+    /* background-color: rgba(12, 27, 168, 0.644); */
+    animation-name: move;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+@keyframes move {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(calc(-100% - 20px));
+    }
+}
+#footer{
+    width: 100%;
+    height: 100%;
 }
