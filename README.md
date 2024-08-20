@@ -21,7 +21,7 @@
   <li><strong>Clone the Repository</strong>:</li>
 </ol>
 <pre>
-<code>git clone https://github.com/yourusername/fashion-website.git</code>
+<code>git clone [https://github.com/yourusername/fashion-website.git](https://github.com/iamkuldeep05/fashion-website.git)</code>
 </pre>
 
 <ol start="2">
